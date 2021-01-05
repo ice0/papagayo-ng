@@ -170,7 +170,7 @@ def breakdownWord(input_word, recursive=False):
     return breakdown_word
 
 
-if __name__ == '__main__':
+def test():
     # test the function
     test_words = ['ciccia', 'fiGLIo', 'Salve', 'sa', 'amici', 'italiano', 'padre', 'Selezioni',
                   'settimana', 'Gli', 'migliore', 'Jelmorini', 'Nicola', 'umani', 'de', 'la',
@@ -180,4 +180,8 @@ if __name__ == '__main__':
                   'HO', 'HAi', 'CHE', 'CHIuso', 'anCHE', 'BanJo', 'marGIne',
                   'RAdio', 'ROnco', 'RUbino', 'REsto', 'ramaRRo', 'cROsta', 'på', 'hänsyn']
     for word in test_words:
-        print(word, " --> ", breakdownWord(unicode(word, input_encoding)))
+        print(word, " --> ", breakdownWord(word))
+
+
+if __name__ == '__main__':
+    test()

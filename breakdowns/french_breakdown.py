@@ -442,8 +442,7 @@ def breakdownWord(word, recursive=False):
         previous_phoneme = phoneme
     return temp_phonemes
 
-
-if __name__ == "__main__":
+def test():
     testwords = ['vin', 'milliardaire', 'villiform', 'tranquillisant', 'taxi', 'exemple', 'chien', 'blanc', 'travaille',
                  'cailloux', 'champ', 'aime', 'ainsi', 'faim', 'mais', 'ennemmi', 'ennui', 'ensemble', 'plein', 'faux',
                  'beau', 'je', 'parle', 'timbre', 'oui', 'royal', 'loi', 'loin', 'brun', 'coeur', 'yeux', 'respect',
@@ -463,4 +462,8 @@ if __name__ == "__main__":
                  'éhonté', 'elle', 'elles', 'émeraude', 'émerger', 'fauve', 'semblant'
                  ]
     for word in testwords:
-        print(word, breakdownWord(unicode(word, input_encoding)))
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

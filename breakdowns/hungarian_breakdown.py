@@ -200,7 +200,7 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = ['szabadon', 'ferenc', 'fricsay', 'szöllösy', 'kodály',
                  'székely', 'fonó', 'györgy', 'cziffra',
                  'csárdás', 'kocsis', 'jános', 'masony', 'solti',
@@ -219,5 +219,8 @@ if __name__ == "__main__":
 
                  ]
     for eachword in testwords:
-        print(eachword, ':', breakdownWord(unicode(eachword, input_encoding)), '--', breakdownWord(
-            unicode(eachword, input_encoding)))
+        print(eachword, ':', breakdownWord(eachword), '--', breakdownWord(eachword))
+
+
+if __name__ == "__main__":
+    test()

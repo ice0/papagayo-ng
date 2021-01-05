@@ -392,7 +392,7 @@ def syllablesToPhonemes(syllables, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = ['Alle', 'bitte', 'all', 'alle', 'bed', 'kaud', 'hotel', 'kogel', 'licht', 'maand', 'niemand', 'tijd',
                  'vis', 'walvis',
                  'graag', 'gemeen', 'goed', 'ja', 'niet', 'jager', 'juist', 'regen', 'riool', 'raam', 'bad', 'gat',
@@ -401,4 +401,8 @@ if __name__ == "__main__":
                  'boot', 'boten', 'ogen', 'muur', 'fuut', 'duren', 'mooi', 'ce', 'ci', 'hec', 'på', 'hänsyn']
     for word in testwords:
         #print(word, wordToSyllables(word), syllablesToPhonemes(wordToSyllables(word)), breakdownWord(word))
-        print(word, wordToSyllables(word), breakdownWord(unicode(word, input_encoding)))
+        print(word, wordToSyllables(word), breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

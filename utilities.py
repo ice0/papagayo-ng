@@ -18,7 +18,7 @@ def get_main_dir():
         # PyInstaller creates a temp folder and stores path in _MEIPASS
         base_path = sys._MEIPASS
     except Exception:
-        base_path = os.path.abspath(".")
+        base_path = os.path.dirname(os.path.realpath(__file__))
     return base_path
 
 

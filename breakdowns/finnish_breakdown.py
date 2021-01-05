@@ -181,10 +181,13 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     teststring = "Kaikki ihmiset syntyvät vapaina ja tasavertaisina arvoltaan ja oikeuksiltaan. Heille on annettu järki ja omatunto, ja heidän on toimittava toisiaan kohtaan veljeyden hengessä"
-    splitter = re.compile('\W+', re.UNICODE)
-    testwords = splitter.split(teststring)
+    testwords = teststring.split()
     testwords.append('på')
     for word in testwords:
-        print(word, breakdownWord(unicode(word, input_encoding)))
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

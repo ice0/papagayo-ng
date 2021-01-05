@@ -94,11 +94,11 @@ def latin1_to_ascii(unicrap):
     return r
 
 
-if __name__ == '__main__':
-    s = str('', 'latin-1')
+def test():
+    s = ""
     for c in range(32, 256):
         if c != 0x7f:
-            s += str(chr(c), 'latin-1')
+            s += chr(c)
     plain_ascii = latin1_to_ascii(s)
 
     print('INPUT type:', type(s))
@@ -108,3 +108,7 @@ if __name__ == '__main__':
     print('OUTPUT type:', type(plain_ascii))
     print('OUTPUT:')
     print(plain_ascii)
+
+
+if __name__ == '__main__':
+    test()
