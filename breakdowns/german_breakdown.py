@@ -233,7 +233,7 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = ['stift', 'korken', 'insel',
                  'auto', 'noch', 'fein', 'sie', 'neun', 'quittung', 'es',
                  'sprechen', 'muß', 'gut', 'von', 'wir', 'hätte',
@@ -245,4 +245,8 @@ if __name__ == "__main__":
                  'meñe', 'på', 'hänsyn'
                  ]
     for word in testwords:
-        print(word, breakdownWord(str(word, input_encoding)))
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

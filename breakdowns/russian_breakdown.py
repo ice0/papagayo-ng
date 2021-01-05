@@ -227,7 +227,7 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = "égaux Vse ljudi roždajutsya svobodnymi i ravnymi v svoem dostoinstve i pravah Oni nadeleny razumom i sovest'ju i dolžny postupat' v otnošenii drug druga v duhe bratstva".split()
     testwordsC = u"\N{CYRILLIC CAPITAL LETTER VE}"
     u"\N{CYRILLIC SMALL LETTER ES}"
@@ -387,7 +387,11 @@ if __name__ == "__main__":
     u"\N{CYRILLIC SMALL LETTER TE}"
     u"\N{CYRILLIC SMALL LETTER VE}"
     u"\N{CYRILLIC SMALL LETTER A}".split()
-    # ~ for word in testwordsC:
-    # ~ print(word, breakdownWord(unicode(word, input_encoding)))
-    # ~ for word in testwords:
-    # ~ print(word, breakdownWord(unicode(word, input_encoding)))
+    for word in testwordsC:
+        print(word, breakdownWord(word))
+    for word in testwords:
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

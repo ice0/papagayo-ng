@@ -234,10 +234,13 @@ def breakdownWord(input_word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == '__main__':
+def test():
     # test the function
     test_words = ['Holas', 'amigos', 'si', 'español', 'padré', 'Selecciones', 'de', 'la', 'semana', 'Los', 'mejores',
                   'sitios', 'los', 'derechos', 'humanos', 'en', 'américa', 'latina', 'y', 'färger', 'på', 'hänsyn']
     for eachword in test_words:
-        print(eachword, breakdownWord(str(eachword, input_encoding)), " ".join(
-            breakdownWord(str(eachword, input_encoding))))
+        print(eachword, breakdownWord(eachword), " ".join(breakdownWord(eachword)))
+
+
+if __name__ == '__main__':
+    test()

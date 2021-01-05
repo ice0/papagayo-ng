@@ -173,7 +173,7 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = ['merhaba', 'Iyi', 'geceler', 'allaha',
                  'ismarladik', 'güle', 'evet', 'hayir',
                  'lütfen', 'anlamiyorum', 'afiyet', 'olsun',
@@ -182,5 +182,8 @@ if __name__ == "__main__":
                  'på', 'hänsyn'
                  ]
     for eachword in testwords:
-        print(eachword, ':', breakdownWord(str(eachword, input_encoding)), '--', breakdownWord(
-            str(eachword, input_encoding)))
+        print(eachword, ':', breakdownWord(eachword), '--', breakdownWord(eachword, input_encoding))
+
+
+if __name__ == "__main__":
+    test()

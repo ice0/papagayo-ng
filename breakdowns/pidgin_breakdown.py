@@ -141,16 +141,21 @@ def breakdownWord(word, recursive=False):
         previous_phoneme = phoneme
     return temp_phonemes
 
-if __name__ == "__main__":
-    testwords = ['y','gooooool','chalk','ghetto','laf','fada','yam','enegi','taxi', 'abi', 
-    'don', 'fufu', 'achu', 'jelof', 'seh', 'sah', 'fo','wahala', 'massa','shame',
-                        'contrih', 'camer', 'naija', 'ah', 'whosaiye', 'pikin',
-                        'babalaro', 'witch', 'doh',
-                        'di', 'sabi', 'sef', 'hambok', 'makala', 'accra', 'chop',
-                        'njama', 'mimbo', 'plat', 'motor', 'vex',
-                        'happi', 'joli', 'tiff', 'piss', 'akra',
-                        'eru', 'ndolo', 'munah', 'ndole', 'benskin', 'yi',
-                        'krouhkrouh', 'wan', 'kosh'
-                        ]
+
+def test():
+    testwords = ['y','gooooool','chalk','ghetto','laf','fada','yam','enegi','taxi', 'abi',
+                 'don', 'fufu', 'achu', 'jelof', 'seh', 'sah', 'fo','wahala', 'massa','shame',
+                 'contrih', 'camer', 'naija', 'ah', 'whosaiye', 'pikin',
+                 'babalaro', 'witch', 'doh',
+                 'di', 'sabi', 'sef', 'hambok', 'makala', 'accra', 'chop',
+                 'njama', 'mimbo', 'plat', 'motor', 'vex',
+                 'happi', 'joli', 'tiff', 'piss', 'akra',
+                 'eru', 'ndolo', 'munah', 'ndole', 'benskin', 'yi',
+                 'krouhkrouh', 'wan', 'kosh'
+                 ]
     for word in testwords:
-        print(word, breakdownWord(str(word, input_encoding)))
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()

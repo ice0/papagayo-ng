@@ -240,7 +240,7 @@ def breakdownWord(word, recursive=False):
     return temp_phonemes
 
 
-if __name__ == "__main__":
+def test():
     testwords = ['casa', 'agilidade', 'guarda',
                  'telhado', 'marinheiro', 'chave', 'passo', 'carro',
                  'guerra', 'guia', 'queijo', 'quiabo',
@@ -249,4 +249,8 @@ if __name__ == "__main__":
                  'gorila', 'escada', 'mecânico'
                  ]
     for word in testwords:
-        print(word, breakdownWord(str(word, input_encoding)))
+        print(word, breakdownWord(word))
+
+
+if __name__ == "__main__":
+    test()
