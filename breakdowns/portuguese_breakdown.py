@@ -249,4 +249,4 @@ if __name__ == "__main__":
                  'gorila', 'escada', 'mecânico'
                  ]
     for word in testwords:
-        print(word, breakdownWord(unicode(word, input_encoding)))
+        print(word, breakdownWord(str(word, input_encoding)))

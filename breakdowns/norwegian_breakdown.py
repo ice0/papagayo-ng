@@ -220,5 +220,5 @@ if __name__ == "__main__":
                  'êtres', 'français', 'égaux'
                  ]
     for eachword in testwords:
-        print(eachword, ':', breakdownWord(unicode(eachword, input_encoding)), '--', breakdownWord(
-            unicode(eachword, input_encoding)))
+        print(eachword, ':', breakdownWord(str(eachword, input_encoding)), '--', breakdownWord(
+            str(eachword, input_encoding)))

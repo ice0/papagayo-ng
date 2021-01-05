@@ -153,4 +153,4 @@ if __name__ == "__main__":
                         'krouhkrouh', 'wan', 'kosh'
                         ]
     for word in testwords:
-        print(word, breakdownWord(unicode(word, input_encoding)))
+        print(word, breakdownWord(str(word, input_encoding)))

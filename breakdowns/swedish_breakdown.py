@@ -242,9 +242,9 @@ def breakdownSwedishSyllable(word, recursive=False, phonetic=False):
                                                                         u'\N{LATIN SMALL LETTER A WITH DIAERESIS}',
                                                                         u'\N{LATIN SMALL LETTER O WITH DIAERESIS}']:
                 phonemes.append('CH')
-            elif word == unicode('människa', input_encoding):
+            elif word == str('människa', input_encoding):
                 phonemes.append('SH')
-            elif word == unicode('människor', input_encoding):
+            elif word == str('människor', input_encoding):
                 phonemes.append('SH')
             elif len(word) == pos + 1 and previous == 's':  # ends in SK
                 phonemes.append('S')
@@ -493,5 +493,5 @@ if __name__ == "__main__":
                  'meñe', 'êtres', 'français', 'égaux'
                  ]
     for eachword in testwords:
-        print(eachword, ':', breakdownWord(unicode(eachword, input_encoding)), '--', breakdownSwedishWordPhonetic(
-            unicode(eachword, input_encoding)))
+        print(eachword, ':', breakdownWord(str(eachword, input_encoding)), '--', breakdownSwedishWordPhonetic(
+            str(eachword, input_encoding)))
